@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9e9de382d6.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="bg-black text-white relative overflow-x-hidden overflow-y-scroll box-border">
+    <nav class="nav h-nav z-[2] px-4 py-2 bg-black text-white flex items-center sticky top-0 left-0 lg:h-[80px] ">
+        <div class="logo">
+            <img  class="w-10 h-10 rounded-[50%]" src="https://images.unsplash.com/photo-1563002536-440db6fcc743?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudCUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+        <div class="nav-items w-full">
+            <ul class="nav-list v-class  hidden sm:flex gap-[30px] justify-center md:gap-[60px] text-lg lg:text-lg ">
+                <li><a class="hover:text-blue-700"  href="#">Home</a></li>
+                <li><a class="hover:text-blue-700"  href="#">Menu</a></li>
+                <li><a class="hover:text-blue-700"  href="#">Events</a></li>
+                <li><a class="hover:text-blue-700"  href="#">About us</a></li>
+                <li><a class="hover:text-blue-700"  href="#">Private Parties</a></li>
+                <li><a class="hover:text-blue-700"  href="#">Location</a></li>
+            </ul>
+        </div>
+
+        <div class="hamburger absolute right-[1%] top-[13px] sm:hidden">
+            <div class="line h[1px] w-[27px] bg-white p-[2px] m-[4px]"></div>
+            <div class="line h[1px] w-[27px] bg-white p-[2px] m-[4px]"></div>
+            <div class="line h[1px] w-[27px] bg-white p-[2px] m-[4px]"></div>
+        </div>
+    </nav>
+
+    <div class="info ">
+        <img class="w-full lg:h-[90vh]" src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+        <h1 class=" pl-2 relative top-[-140px] text-white font-extrabold text-xl sm:text-[2rem] sm:top-[-190px]  md:text-[3rem] lg:top-[-300px] lg:ml-6" >San Fransico</h1>
+        <p class="pl-2 relative top-[-130px]   text-white text-xs sm:text-lg sm:top-[-160px] lg:top-[-260px] lg:text-lg lg:ml-6">At San Fransico ,you can have just about any type</p>
+        <p class=" pl-2 relative top-[-130px]  text-white text-xs sm:text-lg sm:top-[-160px] lg:top-[-260px] lg:text-lg lg:ml-6">of great food and drink that you are in mood for</p>
+
+        <div class="menu-btn  relative top-[-120px] sm:top-[-140px] pl-[10px]">
+            <button class="menubtn  text-white bg-black rounded-[10px] w-[70px] flex border-[2px] hover:text-amber-500 border-orange-300 justify-around text-sm h-[25px] lg:ml-6 lg:relative top-[-110px] lg:w-[90px] lg:h-[30px]  items-center  ">Menu</button>
+        </div>
+    </div>
+
+
+
+    <div class="bestseller mt-[40px] flex flex-col gap-[40px] justify-around w-full px-[20px] relative top-[-70px] ">
+        <h1 class="text-3xl font-extrabold flex justify-center lg:text-4xl ">MENU</h1>
+        <div class="bst-cards w-full justify-center flex flex-row flex-wrap flex-grow gap-y-[40px] gap-x-[10px]  ">
+            <div class="f-card  flex flex-col gap-3 flex-grow basis-[250px] ">
+                <div class="f-img1 flex justify-center ">
+                    <img class="w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[250px]  " src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dCUyMGJvbmUlMjBzdGVha3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                </div>
+
+                <div class="content flex flex-col gap-3 pl-[20px] ">
+
+                    <div class="f-name flex justify-center">
+                        <span class="text-lg md:text-xl">T BONE STEAK</span>
+                    </div>
+                    <div class="f-price flex  justify-center">
+                        <span class="text-lg md:text-xl">$ 20.00</span>
+                    </div>
+                    <div class="f-btn gap-[20px]  flex justify-center">
+                        <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl" >Buy Now</button>
+                        <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="f-card  flex flex-col gap-3 flex-grow basis-[250px]">
+                <div class="f-img2 flex justify-center">
+                    <img class="w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[250px]" src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHBvcnRlcmhvdXNlJTIwc3RlYWt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                </div>
+                <div class="content flex flex-col gap-3 pl-[20px] ">
+
+                    <div class="f-name flex justify-center">
+                        <span class="text-lg md:text-xl">PORTERHOUSE STEAK</span>
+                    </div>
+                    <div class="f-price flex justify-center">
+                        <span class="text-lg md:text-xl">$ 20.00</span>
+                    </div>
+                    <div class="f-btn  gap-[20px] flex justify-center">
+                        <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                        <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="f-card  flex flex-col gap-3 flex-grow basis-[250px]">
+                <div class="f-img3 flex justify-center">
+                    <img class="w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[250px]" src="https://images.unsplash.com/photo-1633040248016-a67a78643afe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNodWNrJTIwcmliJTIwc3RlYWt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                </div>
+                <div class="content flex flex-col gap-3 pl-[20px] ">
+
+                    <div class="f-name flex justify-center">
+                        <span class="text-lg md:text-xl">CHUCK RIB STEAK</span>
+                    </div>
+                    <div class="f-price flex justify-center">
+                        <span class="text-lg md:text-xl">$ 20.00</span>
+                    </div>
+                    <div class="f-btn  gap-[20px] flex justify-center">
+                        <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                        <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="f-card flex flex-col gap-3 flex-grow basis-[250px]">
+                <div class="f-img4 flex justify-center">
+                    <img class="w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[250px]" src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHBhc3RhJTIwd2l0aCUyMHNlYWZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                </div>
+                <div class="content flex flex-col  gap-3 ">
+
+                    <div class="f-name flex justify-center">
+                        <span class="text-lg md:text-xl">PASTA WITH SEAFOOD</span>
+                    </div>
+                    <div class="f-price flex justify-center">
+                        <span class="text-lg md:text-xl">$ 20.00</span>
+                    </div>
+                    <div class="f-btn  gap-[20px] flex justify-center">
+                        <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                        <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome  bg-zinc-900 h-[8em] flex flex-col gap-[10px] mt-4 ">
+        <h1 class="text-3xl flex justify-center font-bold mt-4">WELCOME</h1>
+        <p class="text-xs flex justify-center">A restaurant with a simple purpose: enjoying the</p>
+        <span class="text-xs flex justify-center">precious moment of life</span>
+    </div>
+
+    <div class="gallery w-full  flex flex-col gap-[30px] mt-[40px] px-[20px]">
+        <h1 class="flex justify-center text-3xl font-bold">GALLERY</h1>
+        <div class="first-row flex flex-row flex-wrap  w-auto gap-y-[20px] gap-x-[10px] justify-center items-center sm:flex-row sm:flex-wrap gap-9">
+            <img class="gall-img1 w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[90px] "
+                src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNlYWZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+
+            <img class="gall-img2 w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[90px]  "
+                src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNlYWZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+
+            <img class="gall-img3 w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[90px] "
+                src="https://plus.unsplash.com/premium_photo-1668143365324-37cae1de4e56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNlYWZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+
+            <img class="gall-img4 w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[90px] "
+                src="https://images.unsplash.com/photo-1618055301293-494ab4c71f9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHNlYWZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+
+        </div>
+        <div class="second-row flex flex-row flex-wrap gap-y-[26px] gap-x-[10px]  w-auto justify-center">
+            <img class="gall-img5 w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[90px] "
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fG1lYXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+
+            <img class="gall-img6 w-[300px] h-[300px] rounded-[15px] flex flex-grow basis-[90px]  "
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fG1lYXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+
+        </div>
+    </div>
+
+    <div class="comments w-full mt-[50px]  flex flex-col gap-10">
+        <h1 class="text-3xl md:text-4xl flex justify-center">COMMENTS</h1>
+        <div class="comm-card flex flex-wrap gap-[20px] px-[20px]">
+            <div class="c-card w-[400px] flex flex-grow basis-[300px]  flex-col flex-wrap bg-zinc-800 rounded-[15px] p-[20px] gap-[30px] text-md xl:gap-[40px] sm:text-xl">
+                <div class="c-top flex justify-between ">
+
+                    <div class="c-name">@Dennis</div>
+                    <div class="c-date-time">
+                        <span class="date">24 Jun 2019</span>
+                        <span class="time">16:20</span>
+                    </div>
+
+                </div>
+                <div class="c-content ">
+                    <p>This cafe is my favourite place for breakfast!
+                        They have increadibly delicious coffee and
+                        fresh food. The service is always friendly
+                        and fast, and the atmosphere is very cozy.
+                        I'm always satisfied and would recommend
+                        everyone to try this cafe!
+                    </p>
+                </div>
+
+            </div>
+            <div class="c-card w-[400px] flex flex-col flex-grow basis-[300px] bg-zinc-800 rounded-[15px] p-[20px] gap-[30px] text-md xl:gap-[40px] sm:text-xl">
+                <div class="c-top flex justify-between">
+                    <div class="c-name">@Yoroslav</div>
+                    <div class="c-date-time">
+                        <span class="date">3 Jun 2022</span>
+                        <span class="time">12:20</span>
+                    </div>
+                </div>
+                <div class="c-content">
+                    <p>This cafe is my favourite place for breakfast!
+                        They have increadibly delicious coffee and
+                        fresh food. The service is always friendly
+                        and fast, and the atmosphere is very cozy.
+                        I'm always satisfied and would recommend
+                        everyone to try this cafe!
+                    </p>
+                </div>
+            </div>
+            <div class="c-card w-[400px] flex flex-col flex-grow basis-[300px] bg-zinc-800 rounded-[15px] p-[20px] gap-[30px] text-md xl:gap-[40px] sm:text-xl">
+                <div class="c-top flex justify-between">
+                    <div class="c-name">@Dennis</div>
+                    <div class="c-date-time">
+                        <span class="date">14 Jun 2023</span>
+                        <span class="time">14:20</span>
+                    </div>
+                </div>
+                <div class="c-content">
+                    <p>This cafe is my favourite place for breakfast!
+                        They have increadibly delicious coffee and
+                        fresh food. The service is always friendly
+                        and fast, and the atmosphere is very cozy.
+                        I'm always satisfied and would recommend
+                        everyone to try this cafe!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="similar-dishes px-[20px] mt-[50px] flex flex-col gap-[20px] mb-[100px]">
+        <h1 class="text-3xl font-bold flex justify-center">SIMILAR DISHES</h1>
+        <div class="bst-cards  w-full justify-center flex flex-row flex-wrap flex-grow gap-y-[40px] gap-x-[10px]  ">
+            <div class="f-card flex flex-col gap-3 flex-grow basis-[250px]">
+                <div class="f-img1">
+                    <img class="w-full h-[300px] rounded-[15px] flex flex-grow basis-[250px]" src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dCUyMGJvbmUlMjBzdGVha3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                </div>
+                <div class="f-name flex justify-center ">
+                    <span class="">T BONE STEAK</span>
+                </div>
+                <div class="f-price flex justify-center">
+                    <span class="">$ 20.00</span>
+                </div>
+                <div class="f-btn flex justify-center  gap-[30px]">
+                    <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                    <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                </div>
+            </div>
+            <div class="f-card flex flex-col gap-3 flex-grow basis-[250px]">
+                <div class="f-img2">
+                    <img class="w-full h-[300px] rounded-[15px] flex flex-grow basis-[250px]" src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHBvcnRlcmhvdXNlJTIwc3RlYWt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                </div>
+                <div class="f-name flex justify-center">
+                    <span class="">PORTERHOUSE STEAK</span>
+                </div>
+                <div class="f-price flex justify-center">
+                    <span class="">$ 20.00</span>
+                </div>
+                <div class="f-btn  flex justify-center gap-[30px]">
+                    <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                    <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                </div>
+            </div>
+            <div class="f-card flex flex-col gap-3 flex-grow basis-[250px]">
+                <div class="f-img3">
+                    <img class="w-full h-[300px] rounded-[15px] flex flex-grow basis-[250px]" src="https://images.unsplash.com/photo-1633040248016-a67a78643afe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNodWNrJTIwcmliJTIwc3RlYWt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                </div>
+                <div class="f-name flex justify-center">
+                    <span class="">CHUCK RIB STEAK</span>
+                </div>
+                <div class="f-price flex justify-center">
+                    <span class="">$ 20.00</span>
+                </div>
+                <div class="f-btn  flex justify-center gap-[30px]">
+                    <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                    <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                </div>
+            </div>
+            <div class="f-card flex flex-col gap-3 flex-grow basis-[250px]">
+                <div class="f-img4">
+                    <img class="w-full h-[300px] rounded-[15px] flex flex-grow basis-[250px]" src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHBhc3RhJTIwd2l0aCUyMHNlYWZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                </div>
+                <div class="f-name flex justify-center">
+                    <span class="">PASTA WITH SEAFOOD</span>
+                </div>
+                <div class="f-price flex justify-center">
+                    <span class="">$ 20.00</span>
+                </div>
+                <div class="f-btn  flex justify-center gap-[30px]">
+                    <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                    <button class="buy-now text-md items-center bg-black w-[90px] h-[30px] rounded-[10px] border-[2px] border-orange-400 sm:w-[100px] sm:h-[32px] sm:text-xl md:w-[120px] md:h-[38px] md:text-xl">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sc-title mt-[50px] flex flex-col gap-[40px] sm:mb-[40px]  ">
+        <h1 class="text-2xl font-bold flex justify-center">YOUR SHOPPING CART</h1>
+        <div class="shopping-cart px-[20px] flex flex-col sm:flex-row gap-[30px]  ">
+        
+            <div class="sc-img flex flex-col gap-[30px] ">
+                <div class="img1 flex flex-col flex-grow gap-[20px] sm:flex-row ">
+                    <img class="rounded-[15px] w-full h-[300px] flex flex-grow basis-[90px] sm:h-[150px] sm:max-w-[150px] min-w-[150px]" src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dCUyMGJvbmUlMjBzdGVha3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <span class="sc-name flex text-xl justify-center sm:items-center ">T BONE STEAK</span>
+                    <span class="sc-price flex text-xl justify-center sm:items-center ">20$</span>
+                    <a class=" hidden sm:flex items-center  " href="#"><i class="fa-solid fa-trash" style="color: #ffff;"></i></a>
+                </div>
+    
+                <div class="img2 flex flex-col flex-grow gap-[20px] sm:flex-row">
+                    <img class="rounded-[15px] w-full h-[300px] flex flex-grow basis-[90px] sm:h-[150px] sm:max-w-[150px] min-w-[150px] " src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHBvcnRlcmhvdXNlJTIwc3RlYWt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <span class="sc-name flex text-xl justify-center sm:items-center ">PORTERHOUSE STEAK</span>
+                    <span class="sc-price flex text-xl justify-center sm:items-center ">29$</span>
+                    <a class=" hidden sm:flex items-center" href="#"><i class="fa-solid fa-trash" style="color: #ffff;"></i></a>
+                </div>
+    
+                <div class="img3 flex flex-col flex-grow gap-[20px] sm:flex-row">
+                    <img class="rounded-[15px] w-full h-[300px] flex flex-grow basis-[90px] sm:h-[150px] sm:max-w-[150px] min-w-[150px] " src="https://images.unsplash.com/photo-1633040248016-a67a78643afe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNodWNrJTIwcmliJTIwc3RlYWt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <span class="sc-name flex text-xl justify-center sm:items-center ">CHUCK RIB STEAK</span>
+                    <span class="sc-price flex text-xl justify-center sm:items-center ">28$</span>
+                    <a class="  hidden sm:flex items-center" href="#"><i class="fa-solid fa-trash " style="color: #ffff;"></i></a>
+                </div>
+    
+                
+            </div>
+    
+            <div class="vll"></div>
+    
+            <div class="order flex flex-col gap-[10px]">
+                <h2 class="text-2xl font-[600]">Order</h2>
+                <span class="result text-lg flex gap-[20px]">
+                    Result <span class="order_price">77$</span> 
+                </span>
+                <span class="delivery text-lg flex gap-[20px]">
+                    Delivery <span class="order_price">5$</span>
+                </span>
+                <span class="total text-lg flex gap-[20px]">
+                    Total <span class="order_price">82$</span>
+                </span>
+                <div class="delivery flex flex-col gap-[20px]">
+
+                    <h2 class="text-2xl font-[600] mt-[20px]">Delivery</h2>
+                    
+                      <button type="submit" class="bg-black border-orange-500 border-[2px] w-[170px] h-[40px]  text-lg mb-[40px]">Place your Order</button>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
